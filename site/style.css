@@ -16,7 +16,7 @@ a{color:inherit;text-decoration:none}
 .hero{position:relative;overflow:hidden;text-align:center;padding:clamp(56px,9vw,110px) clamp(16px,5vw,64px) 40px}
 .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.45;z-index:0;animation:float 14s ease-in-out infinite alternate}
 .b1{width:420px;height:420px;background:#a5b4fc;top:-120px;left:-80px}.b2{width:380px;height:380px;background:#f9a8d4;top:40px;right:-100px;animation-delay:-6s}
-.hero>*{position:relative;z-index:1}
+.hero>*:not(.blob){position:relative;z-index:1}
 .pill{display:inline-block;margin:0 0 20px;padding:6px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:.875rem;font-weight:600;color:var(--a)}
 h1{margin:0 0 18px;font-size:clamp(2.2rem,6vw,4.2rem);line-height:1.1;letter-spacing:-.03em}
 .lead{max-width:640px;margin:0 auto 30px;font-size:1.15rem;color:var(--muted)}
