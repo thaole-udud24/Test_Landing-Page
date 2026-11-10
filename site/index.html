@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumina — Triển khai ứng dụng trong vài giây</title>
+  <meta name="description" content="Lumina giúp nhóm của bạn đưa mã nguồn lên chạy thật chỉ với một lần đẩy code.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top"><span class="logo"><i></i><i></i><i></i></span>Lumina</a>
+    <nav aria-label="Điều hướng chính">
+      <a href="#features">Tính năng</a>
+      <a href="#how">Cách hoạt động</a>
+      <a href="#pricing">Bảng giá</a>
+      <a href="#faq">Hỏi đáp</a>
+    </nav>
+    <a class="btn btn-small" href="#cta">Dùng thử</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="blob b1"></div><div class="blob b2"></div>
+      <p class="pill">Mới · Triển khai tự động khi push code</p>
+      <h1>Đưa ứng dụng lên chạy<br><span class="grad">chỉ trong vài giây</span></h1>
+      <p class="lead">Kết nối kho mã, Lumina tự build, chạy và cấp địa chỉ riêng cho từng dịch vụ. Không cần cấu hình máy chủ.</p>
+      <div class="actions">
+        <a class="btn" href="#cta">Bắt đầu miễn phí</a>
+        <a class="btn btn-ghost" href="#how">Xem cách hoạt động</a>
+      </div>
+      <div class="mock" aria-hidden="true">
+        <div class="mock-bar"><i></i><i></i><i></i><span>lumina.app / dich-vu-cua-ban</span></div>
+        <div class="mock-body">
+          <div class="mock-line"><b>✓</b> Đã lấy commit <code>a1b2c3d</code></div>
+          <div class="mock-line"><b>✓</b> Build image thành công · 14s</div>
+          <div class="mock-line"><b>✓</b> Kiểm tra sức khỏe đạt</div>
+          <div class="mock-line live"><b>●</b> Đang chạy tại <u>dich-vu.lumina.app</u></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Số liệu nổi bật">
+      <div><strong>16s</strong><span>thời gian triển khai trung bình</span></div>
+      <div><strong>99,9%</strong><span>thời gian hoạt động</span></div>
+      <div><strong>1 click</strong><span>để quay về phiên bản cũ</span></div>
+      <div><strong>0</strong><span>dòng cấu hình máy chủ</span></div>
+    </section>
+
+    <section id="features" class="section">
+      <h2>Mọi thứ nhóm bạn cần để ra mắt</h2>
+      <p class="sub">Từ commit đầu tiên đến người dùng thật, gọn trong một bảng điều khiển.</p>
+      <div class="grid">
+        <article class="card"><span class="ic">⚡</span><h3>Triển khai tức thì</h3><p>Chọn nhánh hoặc tag, Lumina build image và thay container mà không cần can thiệp thủ công.</p></article>
+        <article class="card"><span class="ic">🔒</span><h3>An toàn mặc định</h3><p>Container chạy hệ tệp chỉ đọc, bỏ mọi quyền thừa và giới hạn tài nguyên cố định.</p></article>
+        <article class="card"><span class="ic">📈</span><h3>Giám sát trực quan</h3><p>Biểu đồ CPU, RAM theo thời gian và nhật ký container ngay trong trang quản trị.</p></article>
+        <article class="card"><span class="ic">↩️</span><h3>Quay lui an toàn</h3><p>Mỗi lần triển khai là một mốc phát hành. Hỏng thì quay về bản ổn định chỉ một cú bấm.</p></article>
+        <article class="card"><span class="ic">🔑</span><h3>Biến môi trường mã hóa</h3><p>Giá trị nhạy cảm được mã hóa và che đi, không bao giờ hiện lại trên giao diện.</p></article>
+        <article class="card"><span class="ic">🌐</span><h3>Địa chỉ riêng cho mỗi dịch vụ</h3><p>Mỗi dịch vụ có tên miền con riêng, tự động định tuyến qua cổng vào duy nhất.</p></article>
+      </div>
+    </section>
+
+    <section id="how" class="section alt">
+      <h2>Ba bước, không hơn</h2>
+      <ol class="steps">
+        <li><span>1</span><h3>Kết nối kho mã</h3><p>Dán địa chỉ repository GitHub công khai và chọn nhánh muốn chạy.</p></li>
+        <li><span>2</span><h3>Lumina tự build</h3><p>Hệ thống tải mã, dựng image và kiểm tra cổng 3000 cùng đường dẫn /health.</p></li>
+        <li><span>3</span><h3>Chia sẻ đường dẫn</h3><p>Dịch vụ chạy ngay với địa chỉ riêng. Push thêm commit để cập nhật.</p></li>
+      </ol>
+    </section>
+
+    <section id="pricing" class="section">
+      <h2>Bảng giá đơn giản</h2>
+      <p class="sub">Bắt đầu miễn phí, nâng cấp khi nhóm lớn lên.</p>
+      <div class="plans">
+        <article class="plan"><h3>Học tập</h3><p class="price">0đ<small>/tháng</small></p><ul><li>2 dịch vụ</li><li>Giám sát cơ bản</li><li>Cộng đồng hỗ trợ</li></ul><a class="btn btn-ghost" href="#cta">Chọn gói này</a></article>
+        <article class="plan hot"><span class="tag">Phổ biến</span><h3>Nhóm</h3><p class="price">199k<small>/tháng</small></p><ul><li>10 dịch vụ</li><li>Lịch sử CPU/RAM 24 giờ</li><li>Quay lui không giới hạn</li><li>Hỗ trợ ưu tiên</li></ul><a class="btn" href="#cta">Dùng thử 14 ngày</a></article>
+        <article class="plan"><h3>Doanh nghiệp</h3><p class="price">Liên hệ</p><ul><li>Không giới hạn dịch vụ</li><li>Triển khai riêng</li><li>Cam kết dịch vụ SLA</li></ul><a class="btn btn-ghost" href="#cta">Nói chuyện với chúng tôi</a></article>
+      </div>
+    </section>
+
+    <section id="faq" class="section alt">
+      <h2>Câu hỏi thường gặp</h2>
+      <div class="faq">
+        <details><summary>Tôi cần chuẩn bị gì trong repository?</summary><p>Một Dockerfile ở thư mục gốc, ứng dụng nghe cổng 3000 và trả về trạng thái tại đường dẫn /health.</p></details>
+        <details><summary>Có hỗ trợ repository riêng tư không?</summary><p>Phiên bản hiện tại chỉ hỗ trợ repository công khai thuộc các tài khoản được cho phép.</p></details>
+        <details><summary>Làm sao quay về phiên bản cũ?</summary><p>Mở tab Triển khai của dịch vụ, chọn mốc phát hành cũ rồi bấm Rollback.</p></details>
+      </div>
+    </section>
+
+    <section id="cta" class="cta">
+      <h2>Sẵn sàng đưa ứng dụng lên chạy?</h2>
+      <p>Tạo dịch vụ đầu tiên của bạn trong chưa đầy một phút.</p>
+      <a class="btn btn-light" href="#top">Bắt đầu ngay</a>
+    </section>
+  </main>
+
+  <footer class="foot"><span>© 2026 Lumina · Dự án thử nghiệm chạy trên Mini PaaS</span><a href="#top">Lên đầu trang ↑</a></footer>
+</body>
+</html>
